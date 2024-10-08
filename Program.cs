@@ -7,6 +7,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var teste = builder.Configuration.GetSection("Object").GetSection("Prop1").Value;
+teste = builder.Configuration.GetSection("Object").GetSection("Prop2").Value;
+teste = builder.Configuration.GetSection("Object").GetSection("PropA").Value;
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
