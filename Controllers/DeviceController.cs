@@ -11,10 +11,6 @@ public class DeviceController : MyFirstApiBaseController
 
     public IActionResult Get()
     {
-        var laptop = new Laptop();
-
-        var model = laptop.GetModel();
-
-        return Ok(model);
+        return Ok("Device");
     }
 }
